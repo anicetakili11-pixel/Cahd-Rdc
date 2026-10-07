@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAHD-RDC | Comité d'Actions Humanitaires et de Développement, Bukavu</title>
+<meta name="description" content="CAHD-RDC accompagne juridiquement les personnes vulnérables et promeut la paix et la croissance économique au Sud-Kivu.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito:wght@400;600;700&display=swap">
+<style>
+:root{--nuit:#14305C;--feuille:#2E8B3E;--foret:#1F5F3A;--ocre:#D98E32;--creme:#FFF8EC;--papier:#F7F8FA;--encre:#1d2433;--gris:#5b6475;
+--serif:'Fraunces',Georgia,serif;--sans:'Nunito',system-ui,Arial,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font:17px/1.65 var(--sans);color:var(--encre);background:var(--creme)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ocre);outline-offset:3px}
+.w{max-width:1080px;margin:auto;padding:0 22px}
+h1,h2,h3{font-family:var(--serif);line-height:1.15;color:var(--nuit)}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:14px}
+h3{font-size:1.25rem;margin-bottom:6px}
+section{padding:84px 0}
+.lead{max-width:62ch;color:var(--gris);margin-bottom:34px}
+/* en-tête */
+header{position:sticky;top:0;z-index:9;background:var(--nuit);color:#fff}
+header .w{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--serif);font-weight:700;font-size:1.2rem}
+.brand img{width:46px;height:46px;border-radius:50%;background:#fff}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{text-decoration:none;padding:8px 11px;border-radius:99px;font-weight:600;font-size:.95rem}
+nav a:hover{background:rgba(255,255,255,.14)}
+@media(max-width:860px){header .w{height:auto;padding-top:8px;padding-bottom:8px;flex-direction:column}nav{justify-content:center}nav a{padding:5px 9px;font-size:.88rem}html{scroll-padding-top:110px}}
+/* hero */
+.hero{background:var(--nuit);color:#fff;padding:70px 0 120px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;left:-5%;right:-5%;bottom:-1px;height:70px;background:var(--creme);border-radius:50% 50% 0 0/100% 100% 0 0}
+.hero .w{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.hero h1{color:#fff;font-size:clamp(2.2rem,5.4vw,3.8rem)}
+.hero p{max-width:52ch;margin:18px 0 28px;color:#dbe4f3;font-size:1.1rem}
+.hero .logo{width:min(300px,70%);margin:auto;border-radius:50%;background:#fff;padding:6px;box-shadow:0 0 0 10px rgba(217,142,50,.35)}
+@media(max-width:760px){.hero .w{grid-template-columns:1fr}.hero .logo{order:-1;width:170px}}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:13px 24px;border-radius:99px;background:var(--ocre);color:#241705;margin:0 10px 10px 0}
+.btn:hover{background:#e6a04a}
+.btn.alt{background:transparent;color:#fff;border:2px solid #fff}
+/* à propos */
+.trio{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:10px}
+.trio>div{background:#fff;padding:26px;border-radius:26px 26px 26px 6px;border-top:5px solid var(--feuille)}
+.trio>div:nth-child(2){border-color:var(--ocre)}.trio>div:nth-child(3){border-color:var(--nuit)}
+.valeurs{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.valeurs span{background:var(--foret);color:#fff;padding:8px 18px;border-radius:99px;font-weight:600}
+/* domaines */
+#domaines{background:var(--papier)}
+.doms{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.doms div{padding:22px 22px 22px 24px;background:#fff;border-left:6px solid var(--feuille);border-radius:4px 22px 22px 4px}
+.doms div:nth-child(3n+2){border-color:var(--ocre)}.doms div:nth-child(3n){border-color:var(--nuit)}
+.doms p{color:var(--gris);font-size:.97rem}
+/* équipe */
+.equipe{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:30px}
+.membre{text-align:center}
+.photo{width:190px;height:190px;margin:0 auto 16px;border-radius:50%;overflow:hidden;border:5px solid #fff;box-shadow:0 0 0 4px var(--ocre);
+background:#dfe6ef url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='38' r='17' fill='%239aa8bd'/%3E%3Cpath d='M16 96c2-24 18-36 34-36s32 12 34 36z' fill='%239aa8bd'/%3E%3C/svg%3E") center/cover}
+.photo img{width:100%;height:100%;object-fit:cover}
+.role{color:var(--feuille);font-weight:700;margin-bottom:8px}
+.membre p{color:var(--gris);font-size:.95rem;max-width:34ch;margin:auto}
+.note{margin-top:34px;font-size:.92rem;color:var(--gris)}
+/* projets */
+#projets{background:var(--papier)}
+.vide{background:#fff;border:2px dashed #c7cfdb;border-radius:22px;padding:30px;max-width:640px}
+/* transparence */
+#transparence{background:var(--foret);color:#fff}
+#transparence h2,#transparence h3{color:#fff}#transparence .lead{color:#d6ebdd}
+.docs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.doc{display:block;text-decoration:none;background:#fff;color:var(--encre);padding:20px 22px;border-radius:18px}
+.doc strong{display:block;font-family:var(--serif);color:var(--nuit);font-size:1.1rem}
+.doc span{color:var(--gris);font-size:.92rem}
+.doc:hover{box-shadow:0 0 0 4px var(--ocre)}
+.doc.bientot{background:rgba(255,255,255,.12);color:#fff}.doc.bientot strong{color:#fff}.doc.bientot span{color:#d6ebdd}
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:44px}
+@media(max-width:760px){.contact{grid-template-columns:1fr}}
+.coord p{margin-bottom:14px}.coord b{display:block;color:var(--nuit)}
+form{display:grid;gap:12px;background:#fff;padding:26px;border-radius:26px}
+label{font-weight:700;font-size:.93rem}
+input,textarea{width:100%;font:inherit;padding:11px 13px;border:2px solid #cfd6e2;border-radius:12px;margin-top:4px}
+textarea{min-height:120px}
+footer{background:var(--nuit);color:#c9d4e8;padding:30px 0;font-size:.92rem}
+footer .w{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="w">
+<a class="brand" href="#accueil"><img src="images/logo.png" alt="Logo CAHD-RDC">CAHD-RDC</a>
+<nav aria-label="Navigation principale">
+<a href="#apropos">À propos</a><a href="#domaines">Domaines</a><a href="#equipe">Équipe</a><a href="#projets">Actualités</a><a href="#transparence">Transparence</a><a href="#contact">Contact</a>
+</nav></div></header>
+
+<main>
+<div class="hero" id="accueil"><div class="w">
+<div>
+<h1>Un Congo en paix, où la justice protège les plus vulnérables</h1>
+<p>Le Comité d'Actions Humanitaires et de Développement accompagne les personnes vulnérables du Sud-Kivu : aide juridique et judiciaire, aide d'urgence, paix et autonomie économique.</p>
+<a class="btn" href="#contact">Nous contacter</a><a class="btn alt" href="#transparence">Voir nos documents officiels</a>
+</div>
+<img class="logo" src="images/logo.png" alt="Logo du Comité d'Actions Humanitaires et de Développement : un arbre entre deux mains">
+</div></div>
+
+<section id="apropos"><div class="w">
+<h2>Qui sommes-nous</h2>
+<p class="lead">CAHD-RDC est une association sans but lucratif de droit congolais, établie à Bukavu. Elle regroupe des femmes et des hommes engagés pour une justice équitable, la paix, la non-violence et la résolution pacifique des conflits.</p>
+<div class="trio">
+<div><h3>Notre vision</h3><p>Participer à la construction de l'État de droit dans un Congo où les citoyens vivent dans des conditions de paix favorables à leur croissance économique et à un développement durable.</p></div>
+<div><h3>Notre mission</h3><p>Assurer un accompagnement juridique et judiciaire aux personnes vulnérables, et promouvoir la paix ainsi que les facteurs de croissance économique des citoyens.</p></div>
+<div><h3>Notre objectif</h3><p>Contribuer à la promotion et à la protection des droits humains, de la paix et de la croissance économique, pour un développement durable des communautés.</p></div>
+</div>
+<div class="valeurs" aria-label="Nos valeurs"><span>Dignité</span><span>Promptitude</span><span>Équité</span><span>Travail bien fait</span><span>Redevabilité</span></div>
+</div></section>
+
+<section id="domaines"><div class="w">
+<h2>Nos domaines d'intervention</h2>
+<p class="lead">Des réponses urgentes et durables aux besoins des personnes vulnérables, en particulier les femmes et les jeunes sans emploi.</p>
+<div class="doms">
+<div><h3>Droits humains</h3><p>Promotion et protection des droits humains, signalement des violations, renforcement des capacités en droit international humanitaire et en justice transitionnelle.</p></div>
+<div><h3>Paix et cohésion sociale</h3><p>Éducation citoyenne à la paix et à la bonne gouvernance, formation des acteurs de la société civile, analyse des conflits.</p></div>
+<div><h3>Aide d'urgence</h3><p>Secours multisectoriel aux victimes et aux déplacés en cas de catastrophe naturelle ou de guerre.</p></div>
+<div><h3>Sécurité alimentaire, nutrition et santé</h3><p>Priorité à l'alimentation, à la nutrition, à la protection et à la santé, avec une attention particulière aux épidémies.</p></div>
+<div><h3>Agriculture et élevage</h3><p>Promotion de l'agriculture et de l'élevage de petits et gros bétails pour une sécurité alimentaire durable.</p></div>
+<div><h3>Protection et inclusion</h3><p>Protection sensible au genre, à l'âge et au handicap, et prévention de l'exploitation et des abus sexuels.</p></div>
+<div><h3>Emploi des jeunes</h3><p>Accompagner les jeunes vers l'auto-prise en charge par la promotion de l'emploi.</p></div>
+<div><h3>Infrastructures</h3><p>Construction et réhabilitation d'urgence d'infrastructures socio-économiques et de santé.</p></div>
+</div></div></section>
+
+<section id="equipe"><div class="w">
+<h2>Notre équipe</h2>
+<p class="lead">Les membres fondateurs et les responsables qui font vivre CAHD-RDC au quotidien.</p>
+<div class="equipe">
+<article class="membre"><div class="photo"><img src="images/equipe/desire-mirindi.jpg" alt="Désiré Mirindi" loading="lazy" onerror="this.remove()"></div>
+<h3>Désiré Mirindi</h3><div class="role">Président du Conseil d'Administration</div><p>Membre fondateur. Il convoque et préside l'Assemblée Générale et veille à l'application de ses résolutions.</p></article>
+<article class="membre"><div class="photo"><img src="images/equipe/ernide-munyerenkana.jpg" alt="Ernide Munyerenkana" loading="lazy" onerror="this.remove()"></div>
+<h3>Ernide Munyerenkana</h3><div class="role">Coordinatrice</div><p>Membre fondatrice. Elle dirige la Coordination et répond de la gestion quotidienne de l'association devant le Conseil d'Administration.</p></article>
+<article class="membre"><div class="photo"><img src="images/equipe/anicet-bahizire.jpg" alt="Anicet Bahizire" loading="lazy" onerror="this.remove()"></div>
+<h3>Anicet Bahizire</h3><div class="role">Chargé de Programmes</div><p>Il coordonne l'exécution et le suivi des programmes et projets, et appuie la planification et le rapportage.</p></article>
+<article class="membre"><div class="photo"><img src="images/equipe/etienne-mugabe.jpg" alt="Etienne Mugabe" loading="lazy" onerror="this.remove()"></div>
+<h3>Etienne Mugabe</h3><div class="role">Membre fondateur</div><p>Signataire des statuts de CAHD-RDC.</p></article>
+<article class="membre"><div class="photo"><img src="images/equipe/prosper-okola.jpg" alt="Prosper Okola" loading="lazy" onerror="this.remove()"></div>
+<h3>Prosper Okola</h3><div class="role">Membre fondateur</div><p>Signataire des statuts de CAHD-RDC.</p></article>
+</div>
+<p class="note">Notre gouvernance : Assemblée Générale, Conseil d'Administration, Commission de Contrôle et Coordination (Programmes, Administration et Ressources Humaines, Finances). <a href="docs/organigramme-cahd-rdc.pdf">Voir l'organigramme (PDF)</a>.</p>
+</div></section>
+
+<section id="projets"><div class="w">
+<h2>Projets et actualités</h2>
+<div class="vide"><h3>Nos prochaines nouvelles arrivent ici</h3><p>Rapports, activités de terrain et annonces seront publiés sur cette page. Suivez-nous sur nos réseaux sociaux : @cahdrdc.</p></div>
+</div></section>
+
+<section id="transparence"><div class="w">
+<h2>Transparence et légalité</h2>
+<p class="lead">CAHD-RDC est enregistrée auprès de la Division provinciale de la Justice du Sud-Kivu. Nos documents officiels sont publics.</p>
+<div class="docs">
+<a class="doc" href="docs/statuts-cahd-rdc.pdf" download><strong>Statuts et certificat de dépôt</strong><span>Statuts notariés, procès-verbal constitutif, certificat de dépôt (PDF)</span></a>
+<a class="doc" href="docs/organigramme-cahd-rdc.pdf" download><strong>Organigramme</strong><span>Organes et services de CAHD-RDC (PDF)</span></a>
+<!-- Pour publier le manuel de procédures : copiez le PDF dans docs/ puis ajoutez ici un lien comme ci-dessus -->
+<div class="doc bientot"><strong>Formulaire F92</strong><span>Bientôt disponible</span></div>
+<div class="doc bientot"><strong>Autorisation de fonctionnement</strong><span>Bientôt disponible</span></div>
+</div></div></section>
+
+<section id="contact"><div class="w contact">
+<div class="coord">
+<h2>Contact</h2>
+<p class="lead">Une question, un partenariat, une demande d'aide ? Écrivez-nous.</p>
+<p><b>Adresse</b>Avenue Semuliki (Muhumba), n° 07, Bukavu, Sud-Kivu, RDC</p>
+<p><b>Téléphone et WhatsApp</b><a href="tel:+243973267269">097 326 72 69</a></p>
+<p><b>E-mail</b><a href="mailto:cahdrdc@gmail.com">cahdrdc@gmail.com</a></p>
+<p><b>Réseaux sociaux</b>@cahdrdc</p>
+</div>
+<form id="f">
+<label>Votre nom<input name="nom" required></label>
+<label>Votre e-mail ou téléphone<input name="contact" required></label>
+<label>Votre message<textarea name="msg" required></textarea></label>
+<button class="btn" type="button" id="bm">Envoyer par e-mail</button>
+<button class="btn" type="button" id="bw" style="background:var(--feuille);color:#fff">Envoyer par WhatsApp</button>
+</form>
+</div></section>
+</main>
+
+<footer><div class="w"><span>© <span id="an"></span> CAHD-RDC asbl, Bukavu</span><span>Comité d'Actions Humanitaires et de Développement</span></div></footer>
+
+<script>
+document.getElementById('an').textContent=new Date().getFullYear();
+function txt(){var f=document.getElementById('f');if(!f.reportValidity())return null;
+return 'Nom : '+f.nom.value+'\nContact : '+f.contact.value+'\n\n'+f.msg.value}
+document.getElementById('bm').onclick=function(){var t=txt();if(t)location.href='mailto:cahdrdc@gmail.com?subject='+encodeURIComponent('Message depuis le site CAHD-RDC')+'&body='+encodeURIComponent(t)};
+document.getElementById('bw').onclick=function(){var t=txt();if(t)window.open('https://wa.me/243973267269?text='+encodeURIComponent(t),'_blank','noopener')};
+</script>
+</body>
+</html>
